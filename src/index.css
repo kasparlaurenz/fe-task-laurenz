@@ -1,0 +1,10 @@
+#root {
+    background-color: rgb(35, 35, 35);
+    color: rgb(241, 241, 241);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}

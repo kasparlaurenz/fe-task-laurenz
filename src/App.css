@@ -1,4 +1,54 @@
-input {
+.App {
+    width: 400px;
+}
+
+form {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100;
+}
+
+input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:not([type='date']) {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type='submit'] {
+    background-color: rgb(126, 195, 206);
+    color: rgb(35, 35, 35);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: 1px solid rgb(126, 195, 206);
+    transition: all 0.3s ease;
+}
+
+button[type='submit']:hover {
+    background-color: rgb(35, 35, 35);
+    color: rgb(126, 195, 206);
+    border: 1px solid rgb(126, 195, 206);
+}
+
+label {
+    margin-top: 1rem;
+    display: inline-block;
 }
