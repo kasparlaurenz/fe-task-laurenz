@@ -10,10 +10,10 @@ export const getRandomUser = async (): Promise<User> => {
     return data;
 };
 
-export const postUser = async (formData: FormData): Promise<void> => {
+export const postUser = async (payload: FormData): Promise<void> => {
     const headers = {
         'Content-Type': 'application/json',
         'x-api-key': process.env.REACT_APP_API_KEY,
     };
-    await axios.post(API_POST, formData, { headers });
+    await axios.post(API_POST, payload, { headers });
 };
