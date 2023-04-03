@@ -1,7 +1,8 @@
-import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
+import type { ChangeEvent, FormEvent } from 'react';
+import type { FormData, User } from './utils/types';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { getRandomUser, postUser } from './utils/data';
-import { FormData, User } from './utils/types';
 
 function App() {
     const [userData, setUserData] = useState<User>();
